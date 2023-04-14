@@ -44,7 +44,7 @@ The project demonstrates the following features:
 - Use of static methods in a class for utility functions.
 - Binding of event handlers with proper context using `bind()`.
 
-## Classes {#classes}
+## Classes
 
 #### Tooltip
 
