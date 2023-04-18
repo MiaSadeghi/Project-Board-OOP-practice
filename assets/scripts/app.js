@@ -1,7 +1,7 @@
 class Tooltip {
   hide(tooltipElement, project) {
     DOMHelper.removeElement(tooltipElement);
-    prj.hasActiveTooltip = false;
+    project.hasActiveTooltip = false;
   }
 
   show(project) {
@@ -41,9 +41,7 @@ class ProjectItem {
     this.updateProjectListHandler = updateProjectListFn;
     this.title = document.getElementById(id).children[0].textContent;
     this.details = document.getElementById(id).children[1].textContent;
-    this.extraInfo = document
-      .getElementById(id)
-      .getAttribute("data-extra-info");
+    this.extraInfo = document.getElementById(id).dataset.extraInfo;
     this.connectInfoButton();
     this.connectSwitchButton();
   }
